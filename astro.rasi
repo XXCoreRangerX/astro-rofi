@@ -1,0 +1,171 @@
+k/*
+ * Copyright (C) 2021 XXCoreRangerX <mail@xxcore.pl>
+ *
+ * Project:    Astro Rofi
+ * Repository: https://github.com/xxcorerangerx/astro-rofi
+ * License:    MIT
+ */
+
+* {
+    astro0:     #1B1C1E;
+    astro1:     #17181A;
+    astro2:     #222326;
+    astro3:     #3A3C42;
+    astro4:     #ECEFF4;
+    astro5:     #D8DEE9;
+    astro6:     #E5E9F0;
+    astro7:     #28293D;
+    astro8:     #242436;
+    astro9:     #202030;
+    astro10:    #1C1C2A;
+    astro11:    #E12A38;
+    astro12:    #CB1A4A;
+    astro13:    #E39417;
+    astro14:    #EDC707;
+    astro15:    #318C69;
+    astro16:    #008060;
+    astro17:    #247DE3;
+    astro18:    #2464E0;
+    astro19:    #24A0E3;
+    astro20:    #1b7fb5;
+    astro21:    #7724e3;
+    astro22:    #6A17D1;
+
+    font:       "Fira Code Medium 12";
+
+    background:                  @astro0;
+    foreground:                  @astro4;
+    selected-normal-foreground:  @foreground;
+    normal-foreground:           @astro4;
+    alternate-normal-background: @astro0;
+    selected-urgent-foreground:  @astro7;
+    urgent-foreground:           @foreground;
+    alternate-urgent-background: @astro0;
+    active-foreground:           @foreground;
+    selected-active-foreground:  @foreground;
+    alternate-active-background: @astro0;
+    bordercolor:                 @astro0;
+    alternate-normal-foreground: @foreground;
+    normal-background:           @background;
+    selected-normal-background:  @astro7;
+    border-color:                @astro0;
+    spacing:                     2;
+    separatorcolor:              @astro0;
+    urgent-background:           @background;
+    selected-urgent-background:  @astro7;
+    alternate-urgent-foreground: @urgent-foreground;
+    background-color:            @astro0;
+    alternate-active-foreground: @active-foreground;
+    active-background:           @background;
+    selected-active-background:  @astro7;
+}
+
+//----------------------
+// Style
+//----------------------
+
+#window {
+    background-color: @background;
+}
+
+#mainbox {
+    border:  2;
+    padding: 10;
+}
+
+#message {
+    border:       2px 2px 2px ;
+    border-color: @separatorcolor;
+    padding:      10 ;
+}
+
+#textbox {
+    text-color: @foreground;
+}
+
+#listview {
+    fixed-height: 0;
+    padding:	  5 0 0;
+    spacing:      5px ;
+}
+
+#element {
+    border:  0;
+    padding: 5px ;
+}
+
+#element.normal.normal {
+    background-color: @normal-background;
+    text-color:       @normal-foreground;
+}
+
+#element.normal.urgent {
+    background-color: @urgent-background;
+    text-color:       @urgent-foreground;
+}
+
+#element.normal.active {
+    background-color: @active-background;
+    text-color:       @active-foreground;
+}
+
+#element.selected.normal {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+    border-radius:    10px;
+}
+
+#element.selected.urgent {
+    background-color: @selected-urgent-background;
+    text-color:       @selected-urgent-foreground;
+    border-radius:    10px;
+}
+
+#element.selected.active {
+    background-color: @selected-active-background;
+    text-color:       @selected-active-foreground;
+    border-radius:    10px;
+}
+
+#element.alternate.normal {
+    background-color: @alternate-normal-background;
+    text-color:       @alternate-normal-foreground;
+}
+
+#element.alternate.urgent {
+    background-color: @alternate-urgent-background;
+    text-color:       @alternate-urgent-foreground;
+}
+
+#element.alternate.active {
+    background-color: @alternate-active-background;
+    text-color:       @alternate-active-foreground;
+}
+
+#button.selected {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+
+#inputbar {
+    spacing:    5;
+    text-color: @normal-foreground;
+    padding:    5px ;
+    border:	0 0 1;
+    border-color: @separatorcolor;
+}
+
+#case-indicator {
+    spacing:    0;
+    text-color: @normal-foreground;
+}
+
+#entry {
+    spacing:    0;
+    text-color: @normal-foreground;
+}
+
+#prompt {
+    spacing:    0;
+    text-color: @normal-foreground;
+}
