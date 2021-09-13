@@ -21,7 +21,9 @@
 wget https://raw.githubusercontent.com/XXCoreRangerX/astro-rofi/master/astro.rasi -O /usr/share/rofi/themes/astro.rasi
 ```
 **Note:** You may need superuser permissions to modify `/usr/share/rofi` directory
-2. Change the default Rofi theme in `~/.config/rofi/config.rasi
+
+
+2. Change the default Rofi theme in `~/.config/rofi/config.rasi`:
 ```css
 configuration {
         theme: "/usr/share/rofi/themes/astro.rasi";
